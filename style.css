@@ -11,6 +11,87 @@
   /* Police de la maquette : Inter (Google Fonts), ou une police système */
 }
 
-body {
-  font-family: "Inter", system-ui, sans-serif;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+header {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: 10px 0;
+}
+.dive_forme {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 35px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 13px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#liste_carte {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    #liste_carte {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #liste_carte {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media qur */

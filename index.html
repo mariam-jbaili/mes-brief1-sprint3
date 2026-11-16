@@ -15,9 +15,39 @@
 
     <!-- Si tu utilises un framework CSS (Bootstrap, Tailwind…), ajoute son lien ICI, AVANT style.css -->
     <link rel="stylesheet" href="style.css" />
-
     <!-- defer : le script s'exécute une fois le HTML chargé -->
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+        <header>
+           <div>
+            <h4>Atlas Voyages</h4>
+           </div>
+      </header>
+    <main>
+      <h1>Explorer le monde</h1>
+      <p>Choisis un continent, parcours les pays et trouve ta prochaine destination.</p>
+      <div class="dive_forme">
+        <form action="felter">
+          <label for="Continent">Continent </label><br>
+          <select name="Continent" id="Continent">
+            <opption value=""  ></opption>
+            <opption value=""  ></opption>
+            <opption value=""  ></opption>
+            <opption value=""  ></opption>
+            <opption value=""  ></opption>
+          </select>
+          <label for="Rechercher">Rechercher un pays</label><br>
+          <input type="text" id="Rechercher">
+          <button>Trier par population</button>
+        </form>
+      </div>
+       <div id="liste_carte">
+         
+          
+
+       </div>
+
+    </main>
+  </body>
 </html>
